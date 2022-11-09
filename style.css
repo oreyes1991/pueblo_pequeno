@@ -9,7 +9,7 @@ body {
     margin: 0;
     background-color: #7AE582;
 }
-ul {
+.bar {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ ul {
     width: 100%;
     background-color: #333;
     }
-li {
+.bar li {
     float: left;
 }
 li a {
@@ -49,6 +49,7 @@ header h1{
     /*grid-auto-flow: column;*/
     grid-template-columns: 1fr 1fr;
    /* place-items: center;*/
+   gap: 1em;
    
     
 }
@@ -58,7 +59,12 @@ section article{
     margin: 1rem 0;
     border-radius: 0.5rem;
     padding: 0.5rem 0;
+    display: grid;
     cursor: pointer;
+}
+section article img {
+    place-self: center;
+    width: 348px;
 }
 section article:hover {
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3)
@@ -99,4 +105,15 @@ footer a {
 }
 footer a:hover {
     color: cadetblue;
+}
+.intro {
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 0 2em;
+    margin: 0 1em;
+    border: 1px solid #b3b3b3;
+    border-radius:0.5rem;
+    margin-top: 1em;
 }
