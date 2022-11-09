@@ -7,7 +7,7 @@ a {
 }
 body {
     margin: 0;
-    background-color: #7AE582;
+    background-color: #007409;
 }
 .bar {
     list-style: none;
@@ -18,14 +18,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #162717;
     }
 .bar li {
     float: left;
 }
 li a {
     display: block;
-    color: white;
+    color: rgb(179, 179, 179);
     text-align: center;
     padding: 14PX;
     text-decoration: none;
@@ -86,7 +86,7 @@ section article h2, section article p{
   }
 
 footer {
-    background-color: #25A18E;
+    background-color: #162717;
     color: #fff;
     padding: 3rem;
 
