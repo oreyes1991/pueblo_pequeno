@@ -7,7 +7,7 @@ a {
 }
 body {
     margin: 0;
-    background-color: #007409;
+    background-color: #d9d9d9;
 }
 .bar {
     list-style: none;
@@ -18,7 +18,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #162717;
+    background-color: #0d560f;
     }
 .bar li {
     float: left;
@@ -57,6 +57,9 @@ section article{
     transition: box-shadow 0.3s ease;
     background-color: #fff;
     margin: 1rem 0;
+    border: solid #299d2c8c;
+    border-left: none;
+    border-bottom: none;
     border-radius: 0.5rem;
     padding: 0.5rem 0;
     display: grid;
@@ -64,7 +67,7 @@ section article{
 }
 section article img {
     place-self: center;
-    width: 348px;
+    width: 90%;
 }
 section article:hover {
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3)
@@ -86,7 +89,7 @@ section article h2, section article p{
   }
 
 footer {
-    background-color: #162717;
+    background-color: #0d560f;
     color: #fff;
     padding: 3rem;
 
@@ -104,7 +107,7 @@ footer a {
     text-decoration: none;
 }
 footer a:hover {
-    color: cadetblue;
+    color: #0d560f;
 }
 .intro {
     display: grid;
@@ -113,7 +116,7 @@ footer a:hover {
     color: rgb(0, 0, 0);
     padding: 0 2em;
     margin: 0 1em;
-    border: 1px solid #b3b3b3;
+    border: solid #299d2c8c;
     border-radius:0.5rem;
     margin-top: 1em;
 }
