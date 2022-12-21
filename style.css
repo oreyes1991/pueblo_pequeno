@@ -13,6 +13,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-left: 6em;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -29,7 +30,7 @@ body {
 }
 li a {
     display: block;
-    color: rgb(255, 252, 252);
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 30PX;
     text-decoration: none;
@@ -123,4 +124,9 @@ footer a:hover {
     border: solid #299d2c8c;
     border-radius:0.5rem;
     margin-top: 1em;
+}
+#logo2{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
