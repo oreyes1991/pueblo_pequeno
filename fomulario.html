@@ -9,23 +9,30 @@
 </head>
 <body>
     <header>
+        <ul class="bar">
+            <li id = "logo1"><img src="img/logo22.png"></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Ofertas</a></li>
+            <li><a href="vistas.html">Vistas</a></li>
+            <li><a href="cabanas1.html">Cabañas y Hotel</a></li>
+            <li><a href="reserva.html">Reserva tu Espacio</a></li>
+        </ul>
         <h1 id="titulo">
             Pueblo Pequeño
         </h1>
     </header>
    <form>
-    <a href="whatsapp://send?abid=phonenumber&text=Hello%2C%20World!">Send Message</a>
-    <p ?
-    >Por favor llena este formulario y nos pondremos en contacto contigo muy pronto.</p>
-    <fieldset>
-        <legend>Datos De Contacto</legend>
-        <label for="nombre y apellido">Nombre y pellido </label> <input id="full-name" type="text" placeholder="nombre y apellido..." required/> <br/>
-        <label for="email">Email: </label> <input id="email" type="email" placeholder="Email de contacto..." required/> <br/>
-        <label for="numero-de-contacto">Numero de contacto: </label> <input id="contac-number" type="tel" placeholder="Telefono..." required/>
-        <label>What'sapp</label> 
-        <label>Si</label> <input type="radio" name="whatsapp" id="Si"/>
-        <label>No</label> <input type="radio" name="whatsapp" id="No"/>
-    </fieldset>
+    <button class="boton1"><a href="whatsapp://send?abid=phonenumber&text=Hello%2C%20World!">Send me a whatsapp!
+    </a></button>
+    <p>Por favor llena este formulario y nos pondremos en contacto contigo muy pronto.</p>
+    <div class="formulario">
+        <fieldset class="formulario">
+            <legend>Datos De Contacto</legend>
+           <div> <fieldset>Nombre y pellido<input id="full-name" type="text" placeholder="nombre y apellido..." required/> <br/></fieldset></div>
+           <div> <label for="email">Email: </label> <input id="email" type="email" placeholder="Email de contacto..." required/> <br/></div>
+           <div> <label for="numero-de-contacto">Numero de contacto: </label> <input id="contac-number" type="tel" placeholder="Telefono..." required/></div>
+        </fieldset>
+    </div>
     <fieldset>
         <legend>Informacion Para La Reserva</legend>
         <label for="fecha-de-ingreso">Fecha de ingreso <input id="checkIn" type="date" required /></label> <br/>
