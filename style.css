@@ -19,15 +19,19 @@ body {
     left: 0;
     width: 100%;
     background-color: #0d560f;
+    color: white;
     }
 .bar li {
     float: left;
 }
+#logo1 > img{
+    width: 90px;
+}
 li a {
     display: block;
-    color: rgb(179, 179, 179);
+    color: rgb(255, 252, 252);
     text-align: center;
-    padding: 14PX;
+    padding: 30PX;
     text-decoration: none;
 }
 header{
