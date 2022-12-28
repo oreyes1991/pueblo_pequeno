@@ -9,34 +9,61 @@
 </head>
 <body>
     <header>
+        <ul class="bar">
+            <li id = "logo1"><img src="img/logo22.png"></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Ofertas</a></li>
+            <li><a href="vistas.html">Vistas</a></li>
+            <li><a href="cabanas1.html">Cabañas y Hotel</a></li>
+            <li><a href="reserva.html">Reserva tu Espacio</a></li>
+        </ul>
         <h1 id="titulo">
             Pueblo Pequeño
         </h1>
     </header>
-   <form>
-    <a href="whatsapp://send?abid=phonenumber&text=Hello%2C%20World!">Send Message</a>
-    <p ?
-    >Por favor llena este formulario y nos pondremos en contacto contigo muy pronto.</p>
-    <fieldset>
-        <legend>Datos De Contacto</legend>
-        <label for="nombre y apellido">Nombre y pellido </label> <input id="full-name" type="text" placeholder="nombre y apellido..." required/> <br/>
-        <label for="email">Email: </label> <input id="email" type="email" placeholder="Email de contacto..." required/> <br/>
-        <label for="numero-de-contacto">Numero de contacto: </label> <input id="contac-number" type="tel" placeholder="Telefono..." required/>
-        <label>What'sapp</label> 
-        <label>Si</label> <input type="radio" name="whatsapp" id="Si"/>
-        <label>No</label> <input type="radio" name="whatsapp" id="No"/>
-    </fieldset>
-    <fieldset>
-        <legend>Informacion Para La Reserva</legend>
-        <label for="fecha-de-ingreso">Fecha de ingreso <input id="checkIn" type="date" required /></label> <br/>
-        <label for="fecha-de-salida">Fecha de salida <input id="checkOut" type="date" /></label> <br/>
-        <label for="NumPersonas">Numero de personas <Input type="number"/></label> <br/>
-        <label> Mascotas</label>
-        <label>Si</label> <input type="radio" name="mascotas" id="Si"/>
-        <label>No</label> <input type="radio" name="mascotas" id="No"/> 
-
-    </fieldset>
-   </form>
+    <div class="customInfo">
+        <form action="" class="form">
+            <h3 class="subTitle">Nos pondremos en contacto contigo!</h3>
+            <div class="inputInfo">
+                <input type="text" class="input"  id="full-name" placeholder="Nombre y Apelldo" required>
+                <label for="full-name" class="label">Nombre y Apellido</label>
+            </div>
+            <div class="inputInfo">
+                <input type="text" class="input" id="phonenumber" placeholder="Numero de Telefono" required>
+                <label for="phonenumber" class="label">Numero de Telefono</label>
+            </div>
+            <div class="inputInfo">
+                <input type="text" class="input" id="email" placeholder="Email">
+                <label for="email" class="label">Email</label>
+            </div>
+            <div class="inputInfo">
+                <input type="number" id="numberAdults" class="input">
+                <label for="numberAdults" class="label">Adultos</label>
+            </div>
+            <div class="inputInfo">
+                <input type="number" id="numberKids" class="input">
+                <label for="numberKids" class="label">Niños</label>
+            </div>
+            <div class="inputInfo">
+                <input type="number" id="pets" class="input">
+                <label for="pets" class="label">Mascotas</label>
+            </div>
+            <div class="inputInfo">
+                <label class="label1" for="checkIn"><b>Fecha de ingreso</b></label><br>
+                <input id="checkIn" type="date" required />
+                
+            </div>
+            <div class="inputInfo">
+                <label class="label1" for="checkOut"><b>Fecha de salida</b> </label><br>
+                <input id="checkOut" type="date" />
+            </div>
+            <div class="inputInfo">
+                <button class="boton1"><a href="whatsapp://send?abid=phonenumber&text=Hello%2C%20World!">Tenemos whatsapp!
+                </a></button>
+            </div>
+            <input type="submit" class="submitBtn" value="Enviar">
+        </form>
+    </div>
 
     <footer>
         <section>

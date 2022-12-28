@@ -82,9 +82,11 @@ section article h2, section article p{
 }
 .boton1{
     background-size: 100% 100%;
-    border: none;
+    border: solid 2px black;
   cursor: pointer;
   transition: 0.5s;
+  margin-left: 1em;
+  margin-top: 1em;
 }
 .boton1:focus{
     outline: 0;
@@ -125,8 +127,110 @@ footer a:hover {
     border-radius:0.5rem;
     margin-top: 1em;
 }
-#logo2{
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+.formulario {
+    display: grid;
+    place-items:center;
+
+    background-color: aqua;
+        }
+        .customInfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+          }
+          .form {
+            background-color: white;
+            width: 400px;
+            border: solid #299d2c8c;
+            border-left: none;
+            border-bottom: none;
+            border-radius: 0.5rem;
+            padding: 20px 40px;
+            box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+          }
+          
+          .subtitle {
+            font-size: 50px;
+            margin-bottom: 50px;
+          }
+          .inputInfo {
+            position: relative;
+            height: 45px;
+            width: 90%;
+            margin-bottom: 17px;
+          }
+          .input {
+            position: absolute;
+            top: 0px;
+            left: -5px;
+            height: 100%;
+            width: 100%;
+            border: 1px solid #DADCE0;
+            border-radius: 7px;
+            font-size: 16px;
+            padding: 4px 20px;
+            outline: none;
+            background: none;
+            z-index: 1;
+          }
+          
+          /* Hide the placeholder texts (a) */
+          
+          ::placeholder {
+            color: transparent;
+          }
+          .label {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 0 4px;
+            background-color: white;
+            color: #DADCE0;
+            font-size: 16px;
+            transition: 0.5s;
+            z-index: 0;
+          }
+          .submitBtn {
+            display: block;
+            margin-left: auto;
+            padding: 15px 30px;
+            border: none;
+            background-color: #0d560f;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 30px;
+          }
+          
+          .submitBtn:hover {
+            background-color: #117515;
+            transform: translateY(-2px);
+          }
+          .input:focus + .label {
+            top: -7px;
+            left: 3px;
+            z-index: 10;
+            font-size: 14px;
+            font-weight: 600;
+            color: #0d560f;
+          }
+          .input:not(:placeholder-shown)+ .label {
+            top: -7px;
+            left: 3px;
+            z-index: 10;
+            font-size: 14px;
+            font-weight: 600;
+          }
+          .label1 {
+            position: absolute;
+            top: -3px;
+            left: -16px;
+            padding: 0 4px;
+            background-color: white;
+            color: #0d560f;
+            font-size: 16px;
+            transition: 0.5s;
+            z-index: 0;
+        }
