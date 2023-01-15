@@ -1,6 +1,9 @@
 html{
     font-family: 'Raleway', sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 a {
     color:black;
     text-decoration: none;
@@ -25,6 +28,9 @@ body {
 .bar li {
     float: left;
 }
+.bar li :hover{
+  background-color: #082c09;
+}
 #logo1 > img{
     width: 90px;
 }
@@ -35,6 +41,7 @@ li a {
     padding: 30PX;
     text-decoration: none;
 }
+
 header{
     background-image: url("img/vista.jpg") ;
     width: 100%;
@@ -50,15 +57,20 @@ header h1{
 .container{
     
     margin: 0 1em;
-    display: grid;
+    display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-evenly;
     /*grid-auto-flow: column;*/
-    grid-template-columns:repeat(4, calc(25% - 22.5px));
+    /*grid-template-columns:repeat(4, calc(25% - 22.5px));
    /* place-items: center;*/
-   grid-gap: 30px;
+   /*grid-gap: 30px;*/
    
     
 }
-section article{
+.section article{
+    max-width: 300px; 
+    height: 450px; 
+    /*flex-grow: 1;*/
     transition: box-shadow 0.3s ease;
     background-color: #fff;
     margin: 1rem 0;
@@ -66,39 +78,51 @@ section article{
     border-left: none;
     border-bottom: none;
     border-radius: 0.5rem;
-    padding: 0.5rem 0;
-    display: grid;
+    padding: 0.5rem;
     cursor: pointer;
 }
-section article img {
+.section article p {
+    margin: 0rem 1rem 0rem 1rem;
+}
+.precio p {
+  color: #0b680e;
+}
+.section article ul {
+  margin: 0rem 1rem 0rem 0rem;
+}
+.section article img {
     place-self: center;
     width: 90%;
+    margin: 1em;
+    border-radius: 0.5rem;
+
 }
-section article:hover {
+.section article:hover {
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3)
 }
-section article h2, section article p{
+.section article h2, section article p{
     margin: 1rem;
 }
 .boton1{
-    background-size: 100% 100%;
-    border: solid 2px black;
+  background-size: 100% 100%;
+  border: solid 2px black;
   cursor: pointer;
   transition: 0.5s;
   margin-left: 1em;
   margin-top: 1em;
 }
 .boton1:focus{
-    outline: 0;
+  outline: 0;
   }
-  .boton1:hover{
-    padding: 5px 5px;
+.boton1:hover{
+  padding: 5px 5px;
   }
 
 footer {
     background-color: #0d560f;
     color: #fff;
     padding: 3rem;
+    width: 100%;
 
 }
 footer section {
@@ -112,6 +136,7 @@ footer a {
     transition: color 0.3s ease;
     color: #fff;
     text-decoration: none;
+    margin-right: 80px;
 }
 footer a:hover {
     color: #0d560f;
