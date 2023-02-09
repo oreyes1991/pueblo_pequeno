@@ -16,11 +16,13 @@ a {
 }
 body {
     margin: 0;
-    background-color: #d9d9d9;
+    background-color: #A6BB8D;
 }
 /* barra de navegacion */
+
+
 .bar {
-  background-color: #0d560f;
+  background-color: #3C6255;
   margin: 0px;
 }
 .bar__ul{
@@ -43,7 +45,7 @@ text-align: center;
   padding: .3rem;
 }
 .bar__ul :hover{
-  background-color: #082c09;
+  background-color: #61876E;
 }
 
 #logo1 > img{
@@ -70,6 +72,7 @@ text-align: center;
     display: block;
     width: 100%;
     margin: 0px;
+    color: #EAE7B1
     margin-block-start: 0em;
   }
   .bar__responsive--button--container{
@@ -82,7 +85,7 @@ text-align: center;
   .bar{
     height: 80px;
     width: 100%;
-    background-color: #0d560f;
+    background-color: #3C6255;
   }
   .bar__il--responsive{
     list-style:none;
@@ -120,7 +123,7 @@ header{
     background-image: url("img/vista.jpg") ;
     width: 100%;
     background-size: cover;
-    color: rgb(255, 255, 255);
+    color: #EAE7B1;
     padding: 3rem 2rem;
 
 }
@@ -142,9 +145,9 @@ header h1{
     height: 450px; 
     /*flex-grow: 1;*/
     transition: box-shadow 0.3s ease;
-    background-color: #fff;
+    background-color:#EAE7B1;
     margin: 1rem 0;
-    border: solid #299d2c8c;
+    border: solid #61876E;
     border-left: none;
     border-bottom: none;
     border-radius: 0.5rem;
@@ -187,7 +190,7 @@ header h1{
   }
 
 footer {
-    background-color: #0d560f;
+    background-color: #3C6255;
     color: #fff;
     padding: 3rem;
     width: 100%;
@@ -212,7 +215,7 @@ footer a:hover {
 .intro {
   display: grid;
   place-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #EAE7B1;
   color: rgb(0, 0, 0);
   padding: 0 2em;
   margin: 0 1em;
@@ -263,6 +266,7 @@ margin-bottom: 17px;
 }
 ::placeholder {
   color: transparent;
+  background-color: none;
 }
 .label {
   position: absolute;
