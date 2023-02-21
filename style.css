@@ -86,9 +86,7 @@ header h1{
 .section article p {
     margin: 0rem 1rem 0rem 1rem;
 }
-.precio p {
-  color: #0b680e;
-}
+
 .section article ul {
   margin: 0rem 1rem 0rem 0rem;
 }
@@ -367,6 +365,8 @@ position: absolute;
   border-radius: 0.5rem;
   padding: 0.5rem;
   cursor: pointer;
+  position: relative;
+  z-index: -1;
 }
 .AreaR:hover{
   box-shadow: 6px 6px 7px 0px rgb(114 111 111);
@@ -380,10 +380,32 @@ position: absolute;
 }
 .imgReserve2{
   width: 100%;
+  position: relative;
 }
 .imgSlider{
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity .6s linear;
 } 
 
+.hidden {
+  opacity: 0;
+
+}
+
+.precios  {
+   position: absolute;
+  bottom: 1em;
+  color: #0b680e;
+  
+}
+.precio p {
+ 
+  color: #0b680e;
+}
