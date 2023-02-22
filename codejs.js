@@ -27,18 +27,18 @@ if (Xboton){
 const dataGallery = [
     {
         name: 'cabana 1',
-        imgMosaico: 'img/cabanas-02_big.jpg',
-        imgFullScren:'img/cabanas-02_big.jpg'
+        imgMosaico: "img/cabana2.jpg",
+        imgFullScren:"img/cabana2.jpg"
     },
     {
         name: 'cabana 2',
-        imgMosaico: 'img/cabanas-02_big.jpg',
-        imgFullScren:'img/cabanas-02_big.jpg'
+        imgMosaico: "img/cabana2.jpg",
+        imgFullScren:"img/cabana2.jpg"
     },
     {
         name: 'cabana 3',
-        imgMosaico: 'img/cabanas-02_big.jpg',
-        imgFullScren:'img/cabanas-02_big.jpg'
+        imgMosaico: "img/cabana2.jpg",
+        imgFullScren:"img/cabana2.jpg"
     },
     {
         name: 'cabana 4',
@@ -47,23 +47,23 @@ const dataGallery = [
     },
     {
         name: 'cabana 5',
-        imgMosaico: 'img/cabanas-02_big.jpg',
-        imgFullScren:'img/cabanas-02_big.jpg'
+        imgMosaico: "img/cabana3.jpg",
+        imgFullScren:"img/cabana3.jpg"
     },
     {
         name: 'cabana 6',
-        imgMosaico: 'img/cocina_big.jpg',
-        imgFullScren:'img/cocina_big.jpg'
+        imgMosaico: 'img/cocina.jpg',
+        imgFullScren:'img/cocina.jpg'
     },
     {
         name: 'cabana 7',
-        imgMosaico: 'img/interno_02_big.jpg',
-        imgFullScren:'img/interno_02_big.jpg'
+        imgMosaico: "img/cabana2.jpg",
+        imgFullScren:"img/cabana2.jpg"
     },
     {
         name: 'cabana 8',
-        imgMosaico: 'img/cabanas-05_big.jpg',
-        imgFullScren:'img/cabanas-05_big.jpg'
+        imgMosaico: "img/cabana3.jpg",
+        imgFullScren:"img/cabana3.jpg"
     },
   
 ];
@@ -104,4 +104,74 @@ if(mainGallery){
         backGround.classList.add('hide');    
         })
     })
+};
+
+/* Rent Area */
+const areaList = [
+    {
+      name: 'Piscina',
+      precio: "25$/5H",
+      img:["cabana2.jpg", "cabana3.jpg", "cocina.jpg", "interno.jpg"]
+    },
+    {
+      name: 'Salon',
+      precio: "35$/5H",
+      img:["cabana2.jpg", "cabana3.jpg", "cocina.jpg", "interno.jpg"]
+    },
+    {
+      name: 'Parque',
+      precio: "15$/5H",
+      img:["cabana2.jpg", "cabana3.jpg", "cocina.jpg", "interno.jpg"]
+    },
+    {
+      name: 'Retarurante',
+      precio: "20$/5H",
+      img:["cabana2.jpg", "cabana3.jpg", "cocina.jpg", "interno.jpg"]
+    }
+  ];
+  // recorrer una list
+  
+  const areasList = areaList.map((areaRe,i) => {
+    return `<div class="AreaR">
+              <h2>${areaRe.name} </h2>
+              <div class="subContainer">
+                  <div class="imgReserve2">
+                      ${areaRe.img.map((imgSrc, j) => {
+                        return `
+                          <img id="slider-${areaRe.name}-${j}" class="imgSlider hidden" src="img/${imgSrc}" />
+                        `
+                      }).join('')
+                      }
+                  </div>
+                  <p class="precios"><b>${areaRe.precio} </b> </p>
+              </div>
+              
+          </div>`
+  });
+  
+const RentAreas = document.querySelector('.RentAreas');
+RentAreas.innerHTML = areasList.join(' ');
+let counter = 0;
+function showElement(areaName, index) {
+  const element = document.querySelector(`#slider-${areaName}-${index}`);
+  element.classList.remove('hidden');
 }
+function hideElement(areaName, index) {
+  const element = document.querySelector(`#slider-${areaName}-${index}`);
+  element.classList.add('hidden');
+}
+areaList.forEach((area) => {
+  showElement(area.name, counter);
+});
+setInterval(() => {
+  areaList.forEach((area) => {
+    hideElement(area.name, counter);
+  });
+  counter += 1;
+  if (counter >= areaList.length) {
+    counter = 0;
+  }
+  areaList.forEach((area) => {
+    showElement(area.name, counter);
+  });
+}, 8000);
