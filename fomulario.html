@@ -6,21 +6,32 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ab4e6dc9fe.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <ul class="bar">
-            <li id = "logo1"><img src="img/logo22.png"></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html">Ofertas</a></li>
-            <li><a href="vistas.html">Vistas</a></li>
-            <li><a href="cabanas1.html">Cabañas y Hotel</a></li>
-            <li><a href="reserva.html">Reserva tu Espacio</a></li>
+    <nav class="bar">
+        <ul class="bar__ul">
+            <li class="bar__il" id = "logo1"><img src="img/logo22.png"></li>
+            <li class="bar__il"><div class="bar__div"><i class="fa-solid fa-house"></i><a href="index.html">Inicio</a></div></li>
+            <li class="bar__il"><div class="bar__div"><i class="fa-solid fa-mountain-sun"></i><a href="vistas.html">Vistas</a></div></li>
+            <li class="bar__il"><div class="bar__div"><i class="fa-solid fa-house-circle-check"></i><a href="cabanas1.html">Cabañas y Hotel</a></div></li>
+            <li class="bar__il"><div class="bar__div"><i class="fa-solid fa-star"></i><a href="reserva.html">Reserva tu Espacio</a></div></li>
+            <li class="bar__il"><div class="bar__div"><i class="fa-solid fa-info"></i><a href="index.html">Ayuda</a></div></li>
         </ul>
-        <h1 id="titulo">
-            Pueblo Pequeño
-        </h1>
-    </header>
+        <ul class="bar__ul--responsive">
+            <div class="bar__responsive--button--container">
+                <div class="bar__responsive--button fa-solid fa-bars"></div>
+            </div>
+            <div class="bar__il--responsive--container">
+                <li class="bar__il--responsive" id = "logo1__responsive"><img src="img/logo22.png"></li>
+                <li class="bar__il--responsive"><div class="bar__div--responsive"><i class="fa-solid fa-house"></i><a href="index.html">Inicio</a></div></li>
+                <li class="bar__il--responsive"><div class="bar__div--responsive"><i class="fa-solid fa-mountain-sun"></i><a href="vistas.html">Vistas</a></div></li>
+                <li class="bar__il--responsive"><div class="bar__div--responsive"><i class="fa-solid fa-house-circle-check"></i><a href="cabanas1.html">Cabañas</a></div></li>
+                <li class="bar__il--responsive"><div class="bar__div--responsive"><i class="fa-solid fa-star"></i><a href="reserva.html">Tu Espacio</a></div></li>
+                <li class="bar__il--responsive"><div class="bar__div--responsive"><i class="fa-solid fa-info"></i><a href="index.html">Ayuda</a></div></li>
+            </div>
+        </ul>
+    </nav>
     <div class="customInfo hide popu">
         <form action="" class="form">
             <h3 class="subTitle">Nos pondremos en contacto contigo!</h3>

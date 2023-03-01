@@ -11,42 +11,110 @@ body{
   overflow-x: hidden;
 }
 a {
-    color:black;
-    text-decoration: none;
+   color: #000;
+  text-decoration: none;
 }
 body {
     margin: 0;
     background-color: #d9d9d9;
 }
+/* barra de navegacion */
 .bar {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-left: 1em;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #0d560f;
-    color: white;
-    }
-.bar li {
-    float: left;
+  background-color: #0d560f;
+  margin: 0px;
 }
-.bar li :hover{
+.bar__ul{
+  margin: 0px;
+}
+
+.bar__il {
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+
+}
+
+.bar__il a {
+color: #fff;
+font-size: medium;
+text-align: center;
+}
+.bar__il i {
+  padding: .3rem;
+}
+.bar__ul :hover{
   background-color: #082c09;
 }
+
 #logo1 > img{
-    width: 90px;
+  margin: -1em;
+  width: 5em;
+  padding-top: 5px;
 }
-li a {
+
+
+/* bara responsive */
+ .bar__ul--responsive{
+  display: none;
+ }
+ @media only screen and (max-width: 840px){ 
+  .bar__ul{
+    display: none;
+  }
+  #logo1__responsive > img{
+    padding: 0px;
+    width: 85px;
+    height: auto;
+  }
+  .bar__ul--responsive{
     display: block;
-    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0px;
+    margin-block-start: 0em;
+  }
+  .bar__responsive--button--container{
+    z-index: 100;
+    color: #fff;
+    float: right;
+  font-size: 2em;
+  padding: 1rem 4rem;
+  }
+  .bar{
+    height: 80px;
+    width: 100%;
+    background-color: #0d560f;
+  }
+  .bar__il--responsive{
+    list-style:none;
+    width: 100%;
+    padding: 9px 20px;
+   
+   }
+  .bar__il--responsive i{
+    box-sizing: border-box;
     text-align: center;
-    padding: 30PX;
-    text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+  }
+  .bar__il--responsive a{
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+  }
+  .bar__il--responsive--container{
+    width: 100%;
+    position: relative;
+    top: -500px;
+    background-color:#0d560f;
+    transition: all .5s;
+    z-index: 10;
+  }
+  .bar__ul--responsive:hover > .bar__il--responsive--container{
+    top: 3rem;
+  }
 }
+
+
 
 header{
     background-image: url("img/vista.jpg") ;
