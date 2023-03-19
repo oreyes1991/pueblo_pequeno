@@ -8,10 +8,7 @@ html {
 html {
   font-family: "Raleway", sans-serif;
 }
-#map {
-  height: 400px; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
-}
+
 body {
   overflow-x: hidden;
 }
@@ -168,18 +165,14 @@ section article p {
   margin: 1rem;
 }
 .boton1 {
-  background-size: 100% 100%;
-  border: solid 2px black;
   cursor: pointer;
   transition: 0.5s;
-  margin-left: 1em;
   margin-top: 1em;
+  color: #23a427;
+
 }
 .boton1:focus {
   outline: 0;
-}
-.boton1:hover {
-  padding: 5px 5px;
 }
 /* Footers Spec */
 .footer {
@@ -238,7 +231,7 @@ footer a:hover {
   background-color: #eae7b1;
   color: rgb(0, 0, 0);
   padding: 0 2em;
-  margin: 0 1em;
+  margin: 1em 1em;
   border: solid #299d2c8c;
   border-radius: 0.5rem;
   margin-top: 1em;
@@ -432,7 +425,7 @@ footer a:hover {
   display: grid;
   place-content: center;
 }
-/* Area Rente*/
+/* Area Rent*/
 
 .contentReserv {
   display: grid;
@@ -440,7 +433,7 @@ footer a:hover {
 }
 .RentAreas {
   display: flex;
-  gap: 10px;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -498,3 +491,44 @@ footer a:hover {
 .precio p {
   color: #0b680e;
 }
+/* Contacts pag */
+.contact-container{
+  display: grid;
+  grid-template-columns: repeat(5 , 1fr);
+  grid-template-rows:repeat(3,1fr);
+ 
+}
+.contact-items{
+  border: 2px solid #309733c2;
+  background-color:#d5e7d9;
+  border-radius:10px;
+}
+#map{
+  grid-column: 2/5;
+  grid-row: 1/3;
+}
+.maps{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    touch-action: pan-x pan-y;
+    border-radius:10px;
+}
+#contacs{
+  grid-column: 2/5;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+
+}
+.contact-elements{
+  padding-right:20px;
+    text-align:center;  
+}
+.contact-elements li{
+ list-style:none;
+}
+/* end contacts */
