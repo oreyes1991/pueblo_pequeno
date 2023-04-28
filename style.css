@@ -13,17 +13,17 @@ body {
   overflow-x: hidden;
 }
 a {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 body {
   margin: 0;
-  background-color: #a6bb8d;
+  background-color: #eeedede9;
 }
 /* bar de navigation */
 
 .bar {
-  background-color: #3c6255;
+  background-color: rgb(0, 59, 14);
   margin: 0px;
 }
 .bar__ul {
@@ -45,7 +45,7 @@ body {
   padding: 0.3rem;
 }
 .bar__ul :hover {
-  background-color: #61876e;
+  background-color: #0e6b02;
 }
 
 #logo1 > img {
@@ -71,7 +71,7 @@ body {
     display: block;
     width: 100%;
     margin: 0px;
-    color: #eae7b1;
+    color: #ffffff;
   }
   .bar__responsive--button--container {
     z-index: 100;
@@ -83,7 +83,7 @@ body {
   .bar {
     height: 80px;
     width: 100%;
-    background-color: #3c6255;
+    background-color: rgb(0, 59, 14);
   }
   .bar__il--responsive {
     list-style: none;
@@ -105,7 +105,7 @@ body {
     width: 100%;
     position: relative;
     top: -500px;
-    background-color: #0d560f;
+    background-color:  rgb(0, 59, 14);
     transition: all 0.5s;
     z-index: 10;
   }
@@ -118,7 +118,7 @@ header {
   background-image: url("img/vista.jpg");
   width: 100%;
   background-size: cover;
-  color: #eae7b1;
+  color: #ffffff;
   padding: 3rem 2rem;
 }
 header h1 {
@@ -135,9 +135,11 @@ header h1 {
   max-width: 300px;
   height: 450px;
   transition: box-shadow 0.3s ease;
-  background-color: #eae7b1;
+  /* background-color: #d2eda7d2; */
   margin: 1rem 0;
-  border: solid #61876e;
+  /* border: solid 1px rgb(0, 59, 14); */
+  border: 2px solid #309733c2;
+  background-color:#d5e7d9;
   border-left: none;
   border-bottom: none;
   border-radius: 0.5rem;
@@ -228,11 +230,12 @@ footer a:hover {
 .intro {
   display: grid;
   place-items: center;
-  background-color: #eae7b1;
+  border: 2px solid #309733c2;
+  background-color:#d5e7d9;
   color: rgb(0, 0, 0);
   padding: 0 2em;
   margin: 1em 1em;
-  border: solid #299d2c8c;
+  /* border: solid rgb(0, 59, 14); */
   border-radius: 0.5rem;
   margin-top: 1em;
   box-shadow: 6px 6px 7px 0px rgb(114 111 111);
@@ -442,9 +445,10 @@ footer a:hover {
   width: 300px;
   height: 360px;
   transition: box-shadow 0.3s ease;
-  background-color: #fff;
+  border: 2px solid #309733c2;
+  background-color:#d5e7d9;
   margin: 1rem;
-  border: solid #299d2c8c;
+  /* border: solid #299d2c8c; */
   border-left: none;
   border-bottom: none;
   border-radius: 0.5rem;
