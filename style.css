@@ -22,7 +22,7 @@ a {
 }
 body {
     margin: 0;
-    background-color: #A6BB8D;
+    background-color: lightgrey;
 }
 
 /* barra de navegacion */
@@ -147,7 +147,7 @@ header h1 {
     height: 450px;
     /*flex-grow: 1;*/
     transition: box-shadow 0.3s ease;
-    background-color: #EAE7B1;
+    background-color: #FFF8DE;
     margin: 1rem 0;
     border: solid #61876E;
     border-left: none;
@@ -177,6 +177,11 @@ header h1 {
 section article p {
     margin: 1rem;
 }
+/* cabanas photos configuration  */
+
+/* .img-cabanas{
+ height: 70%;
+} */
 .boton1 {
     background-size: 100% 100%;
     border: solid 2px black;
@@ -218,7 +223,7 @@ footer a:hover {
 .intro {
     display: grid;
     place-items: center;
-    background-color: #EAE7B1;
+    background-color: #FFF8DE;
     color: rgb(0, 0, 0);
     padding: 0 2em;
     margin: 0 1em;
