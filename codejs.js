@@ -39,43 +39,43 @@ window.initMap = initMap;
 const dataGallery = [
   {
     name: 'cabana 1',
-    imgMosaico: 'img/cabana2.jpg',
-    imgFullScren: 'img/cabana2.jpg',
+    imgMosaico: 'img/puebloPequeno/vista1.jpg',
+    imgFullScren: 'img/puebloPequeno/vista1.jpg',
   },
   {
     name: 'cabana 2',
-    imgMosaico: 'img/cabana2.jpg',
-    imgFullScren: 'img/cabana2.jpg',
+    imgMosaico: 'img/puebloPequeno/hotelExterior3.jpg',
+    imgFullScren: 'img/puebloPequeno/hotelExterior3.jpg',
   },
   {
     name: 'cabana 3',
-    imgMosaico: 'img/cabana2.jpg',
-    imgFullScren: 'img/cabana2.jpg',
+    imgMosaico: 'img/puebloPequeno/vista5.jpg',
+    imgFullScren: 'img/puebloPequeno/vista5.jpg',
   },
   {
     name: 'cabana 4',
-    imgMosaico: 'img/interno_04_big.jpg',
-    imgFullScren: 'img/interno_04_big.jpg',
+    imgMosaico: 'img/puebloPequeno/vista4.jpg',
+    imgFullScren: 'img/puebloPequeno/vista4.jpg',
   },
   {
     name: 'cabana 5',
-    imgMosaico: 'img/cabana3.jpg',
-    imgFullScren: 'img/cabana3.jpg',
+    imgMosaico: 'img/puebloPequeno/vista6.jpg',
+    imgFullScren: 'img/puebloPequeno/vista6.jpg',
   },
   {
     name: 'cabana 6',
-    imgMosaico: 'img/cocina.jpg',
-    imgFullScren: 'img/cocina.jpg',
+    imgMosaico: 'img/puebloPequeno/vista7.jpg',
+    imgFullScren: 'img/puebloPequeno/vista7.jpg',
   },
   {
     name: 'cabana 7',
-    imgMosaico: 'img/cabana2.jpg',
-    imgFullScren: 'img/cabana2.jpg',
+    imgMosaico: 'img/puebloPequeno/vista11.jpg',
+    imgFullScren: 'img/puebloPequeno/vista11.jpg',
   },
   {
     name: 'cabana 8',
-    imgMosaico: 'img/cabana3.jpg',
-    imgFullScren: 'img/cabana3.jpg',
+    imgMosaico: 'img/puebloPequeno/vista18.jpg',
+    imgFullScren: 'img/puebloPequeno/vista18.jpg',
   },
 ];
 
@@ -121,24 +121,24 @@ if (mainGallery) {
 const areaList = [
   {
     name: "Piscina",
-    precio: "25$/5H",
-    img: ["cabana2.jpg", "cabana3.jpg", "cocina.jpg", "interno.jpg"],
+    precio: "2$/por persona",
+    img: ["puebloPequeno/piscina1.jpg", "puebloPequeno/piscina2.jpg", "puebloPequeno/piscina3.jpg"],
   },
   {
     name: "Salon",
     precio: "35$/5H",
-    img: ["cabana2.jpg", "cabana3.jpg", "cocina.jpg", "interno.jpg"],
+    img: ["puebloPequeno/SfInterior2.jpg", "puebloPequeno/SfInterior3.jpg", "puebloPequeno/SfInterior4.jpg", "puebloPequeno/SfInterior5.jpg"],
   },
   {
     name: "Parque",
-    precio: "15$/5H",
-    img: ["cabana2.jpg", "cabana3.jpg", "cocina.jpg", "interno.jpg"],
+    precio: "",
+    img: ["puebloPequeno/parqueInfantil2.jpg", "puebloPequeno/vista8.jpg", "puebloPequeno/vista10.jpg", "interno.jpg"],
   },
-  {
+  /* {
     name: "Retarurante",
     precio: "20$/5H",
     img: ["cabana2.jpg", "cabana3.jpg", "cocina.jpg", "interno.jpg"],
-  },
+  }, */
 ];
 // recorrer una list
 
