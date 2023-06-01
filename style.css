@@ -115,11 +115,12 @@ body {
 }
 /* header */
 header {
-  background-image: url("img/vista.jpg");
-  width: 100%;
+  background-image: url("img/ppheadingTest1.jpg");
+  /* width: 100%; */
   background-size: cover;
   color: #ffffff;
   padding: 3rem 2rem;
+  /* opacity: 0.81; */
 }
 header h1 {
   font-size: 5rem;
@@ -131,9 +132,10 @@ header h1 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 .section article {
   max-width: 300px;
-  height: 450px;
+/*   height: 450px; */
   transition: box-shadow 0.3s ease;
   /* background-color: #d2eda7d2; */
   margin: 1rem 0;
@@ -148,6 +150,9 @@ header h1 {
 }
 .section article p {
   margin: 0rem 1rem 0rem 1rem;
+}
+.cabanas{
+  order: -1;
 }
 
 .section article ul {
