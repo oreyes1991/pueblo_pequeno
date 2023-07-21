@@ -118,7 +118,7 @@ if (mainGallery) {
 }
 
 /* Rent Area */
-const areaList = [
+/* const areaList = [
   {
     name: "Piscina",
     precio: "2$/por persona",
@@ -139,7 +139,7 @@ const areaList = [
     precio: "20$/5H",
     img: ["cabana2.jpg", "cabana3.jpg", "cocina.jpg", "interno.jpg"],
   }, */
-];
+/* ]; */ 
 // recorrer una list
 
 const areasList = areaList.map((areaRe, i) => {
