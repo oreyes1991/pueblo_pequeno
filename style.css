@@ -8,6 +8,11 @@ html {
 html {
   font-family: "Raleway", sans-serif;
 }
+.pText{
+  color: #000000;
+  text-align: justify;
+
+}
 
 body {
   overflow-x: hidden;
@@ -161,6 +166,22 @@ width: 50%;
   text-align: justify;
 }
 #pool > img {
+  float: right;
+}
+
+#Camp1 > img {
+  float: right;
+}
+
+#partySaloon > img {
+  float: right;
+}
+
+#park > img {
+  float: right;
+}
+
+#cancha > img {
   float: right;
 }
 .section article {
