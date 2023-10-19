@@ -8,6 +8,11 @@ html {
 html {
   font-family: "Raleway", sans-serif;
 }
+.pText{
+  color: #000000;
+  text-align: justify;
+
+}
 
 body {
   overflow-x: hidden;
@@ -115,11 +120,12 @@ body {
 }
 /* header */
 header {
-  background-image: url("img/vista.jpg");
-  width: 100%;
+  background-image: url("img/ppheadingTest1.jpg");
+  /* width: 100%; */
   background-size: cover;
   color: #ffffff;
   padding: 3rem 2rem;
+  /* opacity: 0.81; */
 }
 header h1 {
   font-size: 5rem;
@@ -131,9 +137,56 @@ header h1 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+/* Other services */
+.Containers{
+  background-color: #c1ddc2;
+  float: right;
+  margin: 0.5rem;
+  padding: 1px;
+  display: block;
+  border: solid #0d560f;
+  border-radius: 2%;
+}
+.Containers > h3{
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+
+}
+.Containers > img{
+float: left;
+padding: 5px;
+margin: 20px;
+width: 50%;
+
+}
+.Containers > p {
+  margin: 10px;
+  padding: 25px;
+  text-align: justify;
+}
+#pool > img {
+  float: right;
+}
+
+#Camp1 > img {
+  float: right;
+}
+
+#partySaloon > img {
+  float: right;
+}
+
+#park > img {
+  float: right;
+}
+
+#cancha > img {
+  float: right;
+}
 .section article {
   max-width: 300px;
-  height: 450px;
+/*   height: 450px; */
   transition: box-shadow 0.3s ease;
   /* background-color: #d2eda7d2; */
   margin: 1rem 0;
@@ -148,6 +201,9 @@ header h1 {
 }
 .section article p {
   margin: 0rem 1rem 0rem 1rem;
+}
+.cabanas{
+  order: -1;
 }
 
 .section article ul {
